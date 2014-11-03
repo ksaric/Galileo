@@ -1,0 +1,27 @@
+<div class="form-group has-warning">
+    <label class="control-label" for="searchBox">Filter</label>
+    <input ng-model="searchText" type="text" class="form-control" id="searchBox">
+</div>
+
+<div class="tablespace-list">
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Port number</th>
+            <th>Info</th>
+            <th>Data</th>
+            <th>Protocol</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="tablespace in tablespaces | filter:searchText ">
+            <td>{{ port.id }}</td>
+            <td>{{ port.pnumber }}</td>
+            <td>{{ port.info }}</td>
+            <td>{{ port.data }}</td>
+            <td>{{ port.protocol }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

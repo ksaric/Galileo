@@ -1,0 +1,40 @@
+<div class="form-group has-warning">
+    <label class="control-label" for="searchBox">Filter</label>
+    <input ng-model="searchText" type="text" class="form-control" id="searchBox">
+</div>
+
+<div class="database-list">
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Port</th>
+            <th>Computer name</th>
+            <th>IP address</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="database in databases | filter:searchText ">
+            <td>{{ database.id }}</td>
+            <td>{{ database.name }}</td>
+            <td>{{ database.port }}</td>
+            <td>
+                <strong>{{ database.computer.name }}</strong>
+            </td>
+            <td>{{ database.computer.ip_address }}</td>
+            <td>
+                <a class="btn btn-danger" href="#/users/{{ database.id }}">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Users
+                </a>
+                <a class="btn btn-warning" href="#/tablespaces/{{ database.id }}">
+                    <span class="glyphicon glyphicon-list"></span>
+                    Tablespaces
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

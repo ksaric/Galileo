@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="galileo" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galileo</title>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/paper/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/app.css"/>
+
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-eye-open"></span></a>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="starter-template">
+        <div class="jumbotron">
+            <h1>Parsing scanned network!</h1>
+
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Warning</h3>
+                </div>
+                <div class="panel-body">
+                    Once again, XML parsing and SMB name resolution is an <strong>SYNC process</strong> and the user
+                    should wait for
+                    the results. Look for the results later, at the end of the parse process DB will be commit-ed.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<!--UI-->
+<script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!--JS UTIL-->
+<script src="/static/bower_components/angular/angular.js"></script>
+<script src="/static/bower_components/angular-resource/angular-resource.js"></script>
+<script src="/static/bower_components/underscore/underscore.js"></script>
+<script src="/static/bower_components/restangular/dist/restangular.js"></script>
+<script src="/static/bower_components/angular-route/angular-route.js"></script>
+
+<!--JS-->
+<script src="/static/js/app/app.js"></script>
+<script src="/static/js/app/controllers.js"></script>
+
+</body>
+</html>

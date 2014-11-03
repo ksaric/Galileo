@@ -1,0 +1,30 @@
+<div class="form-group has-warning">
+    <label class="control-label" for="searchBox">Filter</label>
+    <input ng-model="searchText" type="text" class="form-control" id="searchBox">
+</div>
+
+<div class="computer-list">
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Ip address</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="computer in computers | filter:searchText ">
+            <td>{{ computer.id }}</td>
+            <td>{{ computer.name }}</td>
+            <td>{{ computer.ip_address }}</td>
+            <td>
+                <a class="btn btn-info" href="#/ports/{{ computer.id }}">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Ports
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
