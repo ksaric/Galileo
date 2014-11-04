@@ -6,27 +6,27 @@ angular.module('galileo.controllers', ['ngRoute'])
         $routeProvider
 
             .when('/home', {
-                templateUrl: '/static/js/app/views/home.html',
+                templateUrl: '/static/app/views/home.html',
                 controller: 'HomeCtrl'})
 
             .when('/computers', {
-                templateUrl: '/static/js/app/views/computers.html',
+                templateUrl: '/static/app/views/computers.html',
                 controller: 'ComputersCtrl'})
 
             .when('/databases', {
-                templateUrl: '/static/js/app/views/databases.html',
+                templateUrl: '/static/app/views/databases.html',
                 controller: 'DatabasesCtrl'})
 
             .when('databases/users/', {
-                templateUrl: '/static/js/app/views/users.html',
+                templateUrl: '/static/app/views/users.html',
                 controller: 'PortsCtrl'})
 
             .when('/databases/tablespaces/', {
-                templateUrl: '/static/js/app/views/tablespaces.html',
+                templateUrl: '/static/app/views/tablespaces.html',
                 controller: 'PortsCtrl'})
 
             .when('/ports/:computerId', {
-                templateUrl: '/static/js/app/views/ports.html',
+                templateUrl: '/static/app/views/ports.html',
                 controller: 'PortsCtrl'})
         ;
     }])

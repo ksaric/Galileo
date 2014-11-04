@@ -43,22 +43,24 @@ Finally, upload the XML to Galileo. Galileo will use the data to generate the re
 
 ## Project structure ##
 
-Project/
-|-- bin/
-|   |-- project
-|
-|-- project/
-|   |-- test/
-|   |   |-- __init__.py
-|   |   |-- test_main.py
-|   |   
-|   |-- __init__.py
-|   |-- main.py
-|
-|-- setup.py
-|-- README
+    Project/
+    |-- bin/
+    |   |-- project
+    |
+    |-- project/
+    |   |-- test/
+    |   |   |-- __init__.py
+    |   |   |-- test_main.py
+    |   |   
+    |   |-- __init__.py
+    |   |-- main.py
+    |
+    |-- setup.py
+    |-- README
 
 > [Used for angular project](https://github.com/yeoman/generator-angular)
+
 > [Used for flask project structure](https://github.com/mitsuhiko/flask/wiki/Large-app-how-to)
+
 > [Flask project structure](https://github.com/mitsuhiko/flask/wiki/Large-app-how-to)
 

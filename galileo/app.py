@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 
 import flask
 from flask.ext.httpauth import HTTPBasicAuth

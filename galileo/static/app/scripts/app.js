@@ -10,12 +10,7 @@
  */
 angular
     .module('galileoApp', [
-        'ngAnimate',
-        'ngCookies',
-        'ngResource',
         'ngRoute',
-        'ngSanitize',
-        'ngTouch',
         'restangular',
         'galileo.controllers'
     ])
