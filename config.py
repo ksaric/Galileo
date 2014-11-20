@@ -4,7 +4,7 @@ _basedir = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
 
-ADMINS = frozenset(['kristijanaric@yahoo.com'])
+ADMINS = frozenset(['someemail@yahoo.com'])
 SECRET_KEY = 'a2lrbw=='
 HOST = '0.0.0.0'
 
