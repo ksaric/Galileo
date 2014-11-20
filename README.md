@@ -24,7 +24,7 @@ nmap -v -T5 10.168.2.* -oX iii_network.xml
 
 Finally, upload the XML to Galileo. Galileo will use the data to generate the required DB data, allowing the users to check the network data anytime. The problem could be the data staleness.
 
-![post usage.png](https://bitbucket.org/repo/dn7B4B/images/3917744280-post%20usage.png)
+![alt tag](https://raw.github.com/ksaric/Galileo/master/doc/galileo_usage.png)
 
 
 
